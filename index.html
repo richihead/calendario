@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Calendario</title>
     <link rel="stylesheet" href="style.css">
+    <!--El link trae la informacion de estilo CSS creados para el proyecto -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--trae los estilos de las fuentes con las que se van a trabajar-->
 </head>
 <div class="container">
+    <!--Contenedor principal, donde esta contenido toda la información del proyecto-->
     <div class="calendar">
+        <!--Contenedor que agrupa la vista del mes actual/el mes previo y siguiente, adicional se incluye el h1 y parrafo, que con el archivo JS muestra ".date h1" que indica el mes // ".date p" indica la fecha actual -->
         <div class="month">
+            <!--crea el contenedor que va a mostrar el mes-->
             <i class="fas fa-angle-left prev"></i>
+            <!--la etiqueta "i",Muestra el texto marcado con un estilo en cursiva o italica, el fas fa-angle es un decorador // para ver más decoradores ver el archivo de marcadores.-->
             <div class="date">
+                <!--este contenedor que esta contenido en Month, que esta en Calendar, cuenta con información en el h1 (el mes) y el parrafo (la fecha)-->
                 <h1></h1>
                 <p></p>
             </div>
