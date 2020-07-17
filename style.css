@@ -1,9 +1,14 @@
+/* * means ALL. In this case it would be ALL the elements in*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+
+/* toma lo que se encuentra dentro de las etiquetas de HTML */
 
 html {
     font-size: 65%;
@@ -29,11 +34,6 @@ html {
 .month {
     width: 100%;
     height: 12rem;
-    /*  Rem La unidad de medida rem es muy similar a em, con la única diferencia de que no es escalable, esto quiere decir que no depende del elemento padre, sino del elemento raíz del documento, el elemento HTML. Rem significa «Root Em«, o sea, es un em basado en la raíz.
-    
-    Esto significa que si el elemento HTML tiene un tamaño de fuente de 16px (como es por defecto), entonces 1rem, sería igual a 16px, y si queremos aplicar un tamaño basado en rem a cualquier elemento de la página, no importará cual sea el tamaño de fuente que tenga asociado ese elemento, ya que 1 rem siempre será igual a 16 pixeles a no ser que se modifique el elemento raíz.
-    
-    Usar rem nos permite cierta estructura para poder definir ciertas partes del layout, pero al mismo tiempo nos entrega cierta escalabilidad para respetar las configuraciones de cada usuario. */
     background-color: #116677;
     display: flex;
     justify-content: space-between;
