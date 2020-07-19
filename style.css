@@ -2,9 +2,15 @@
 
 * {
     margin: 0;
+    /*La propiedad CSS margin establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen:  margin-top, margin-right, margin-bottom y margin-left.*/
     padding: 0;
+    /*La propiedad CSS padding establece el espacio de relleno requerido por todos los lados de un elemento. El área de padding es el espacio entre el contenido del elemento y su borde (border). No se permiten valores negativos.
+
+    La propiedad padding es un atajo para evitar la asignación de cada lado por separado (padding-top, padding-right, padding-bottom, padding-left).*/
     box-sizing: border-box;
+    /*La propiedad CSS box-sizing como el user agent debe calcular el ancho y alto total de un elemento.*/
     font-family: 'Roboto', sans-serif;
+    /*La propiedad font-family define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar en un elemento seleccionado. A diferencia de la mayoría de las propiedades CSS, los valores se separan con comas (",") para indicar que son valores alternativos.*/
 }
 
 
@@ -12,6 +18,7 @@
 
 html {
     font-size: 65%;
+    /*La propiedad font-size especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa, ya que se usa para calcular la longitud de las unidades em y ex.*/
 }
 
 
@@ -21,6 +28,12 @@ html {
     width: 100%;
     /* La propiedad CSS width especifica la anchura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento. */
     height: 100vh;
+    /*La propiedad CSS height especifica la altura del area de contenido de un elemento. El área de contenido está dentro del padding, borde, y margen del elemento.
+
+    Las propiedades min-height y max-height sobreescriben el valor de height.
+    vh (viewport-height) = Altura de la ventana gráfica.
+    vw (viewport-width) = Anchura de la ventana gráfica.
+    */
     background-color: #12121f;
     /* permite definir el color del fondo del contenedor que se esta trabajando*/
     color: white;
@@ -58,22 +71,40 @@ html {
     Cada sombra es especificada como un ófset del texto, junto con valores de color y radio de difuminación opcionales.*/
 }
 
+
+/*Permite trabajar en la información contenida en la etiqueta "i"*/
+
 .month i {
     font-size: 2.5rem;
+    /* La propiedad font-size especifica la dimensión de la letra. Este tamaño puede, a su vez, alterar el aspecto de alguna otra cosa, ya que se usa para calcular la longitud de las unidades em y ex*/
     cursor: pointer;
+    /* La propiedad CSS:cursor especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento.*/
 }
+
+
+/*Permite trabajar en la información contenida en la etiqueta "h1"*/
 
 .month h1 {
     font-size: 3rem;
     font-weight: 400px;
+    /* La propiedad font-weight de CSS especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold.*/
     text-transform: uppercase;
+    /*La propiedad CSS text-transform especifica el cambio entre mayúsculas y minúsculas del texto de un elemento. Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la primera letra de cada palabra en mayúscula.*/
     letter-spacing: 0.2rem;
+    /*se refiere a un grado ópticamente consistente de aumento de espacio entre letras para afectar la densidad visual en una línea o bloque de texto. */
     margin-bottom: 1rem;
+    /*El margin-bottom CSS  (margen-inferior) es la propiedad de un elemento que establece el espacio requerido en la parte inferior de un elemento. */
 }
+
+
+/*Permite trabajar en la información contenida en la etiqueta "parrafo p"*/
 
 .month p {
     font-size: 1.6rem;
 }
+
+
+/*Permite trabajar en la información contenida en la clase weekday*/
 
 .weekday {
     width: 100%;
@@ -82,6 +113,9 @@ html {
     display: flex;
     align-items: center;
 }
+
+
+/*Permite trabajar en la información contenida en los contenedores que se encuentran en weekday"*/
 
 .weekday div {
     font-size: 1.5rem;
@@ -97,6 +131,7 @@ html {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    /*La propiedad flex-wrap de CSS  especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos.*/
     padding: 0.2rem;
 }
 
@@ -109,6 +144,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: 0.2s;
+    /*Permite definir la transición entre dos estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando pseudo-clases como :hover o :active  o aplicado dinámicamente usando JavaScript.*/
 }
 
 .days div:hover:not(.today) {
