@@ -127,6 +127,9 @@ html {
     align-items: center;
 }
 
+
+/*Permite trabajar en la información contenida en la generalidad de la clase days"*/
+
 .days {
     width: 100%;
     display: flex;
@@ -139,6 +142,7 @@ html {
     font-size: 1.4rem;
     margin: 0.3rem;
     width: calc(40.2rem/7);
+    /*La función CSS calc() puede ser usada en cualquier sitio donde <length>, <frequency>, <angle>, <time>, <number>, o <integer> sea requerido. Con calc() puedes realizar cálculos para determinar valores de propiedades CSS.*/
     height: 5rem;
     display: flex;
     align-items: center;
@@ -146,6 +150,9 @@ html {
     transition: 0.2s;
     /*Permite definir la transición entre dos estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando pseudo-clases como :hover o :active  o aplicado dinámicamente usando JavaScript.*/
 }
+
+
+/* La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
 
 .days div:hover:not(.today) {
     background-color: #262626;
